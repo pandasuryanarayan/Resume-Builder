@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder - Personal Info</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+    <div class="form-visible">
+        <marquee>!!Info!! Starting page of this project is <strong>index.html</strong></marquee>
+        <header>
+            <h1>Personal Information</h1>
+        </header>
+
+        <form id="personalInfoForm">
+            <label for="fullName">Full Name:</label>
+            <textarea id="fullName" rows="2" cols="50" placeholder="Surname Yourname Father's Name Mother's Name" required></textarea>
+
+            <label for="address">Address:</label>
+            <textarea id="address" rows="2" cols="50" placeholder="Full Address" required></textarea>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Email" required>
+
+            <label for="phone">Phone:</label>
+            <input type="number" id="phone" placeholder="Mobile Number" required>
+
+            <button type="button" onclick="savePersonalInfo()">Next</button>
+            <button type="button" onclick="window.location.href = 'index.html'">Home</button>
+        </form>
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder - Education</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+    <div class="form-visible">
+        <marquee>!!Info!! Starting page of this project is <strong>index.html</strong></marquee>
+        <header>
+            <h1>Extra Information</h1>
+        </header>
+
+        <form id="extraInfoForm">
+            <label for="skills">Skills:</label>
+            <textarea id="skills" rows="1" cols="50" placeholder="Enter Skills" required></textarea>
+
+            <label for="hobbies/activities">Activities/Hobbies:</label>
+            <textarea id="actHob" rows="1" col="50" placeholder="Enter Activities/Hobbies" required></textarea>
+
+            <button type="button" onclick="saveExtraInfo()">Next</button>
+            <button type="button" onclick="window.location.href = 'education.html'">Back</button>
+            <button type="button" onclick="window.location.href = 'index.html'">Home</button>
+        </form>
+    </div>
+
+
+</body>
+
+</html>

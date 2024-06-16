@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder - Generate Resume</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.es.js"
+        integrity="sha512-VTufZOUx+Gc0N4JkluA0ZkVs2x4wfDI3p60gRWpHT761kMQ+hiNlYI+8MGXbLO48ymPKAeRa1wsEm3BIaxSEvw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+        </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"
+        integrity="sha512-qZvrmS2ekKPF2mSznTQsxqPgnpkI4DNTlrdUmTzrDgektczlKNRRhy5X5AAOnx5S09ydFYWWNSfcEqDTTHgtNA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+        </script>
+
+    <script src="cdnjs/jspdf.min.js"></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+    <div id="resumeDiv">
+        <marquee>!!Info!! Starting page of this project is <strong>index.html</strong></marquee>
+        <header>
+            <h1>Generated Resume</h1>
+        </header>
+
+        <section id="generatedResume">
+            <!-- Content will be dynamically generated here -->
+        </section>
+
+        <button type="button" onclick="generateResume()">Generate Resume</button>
+
+        <button type="button" onclick="downloadResume()">Download PDF</button>
+        <button type="button" onclick="window.location.href = 'index.html'">Home</button>
+    </div>
+</body>
+
+</html>

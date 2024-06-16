@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder - Education</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+    <div class="form-visible">
+        <marquee>!!Info!! Starting page of this project is <strong>index.html</strong></marquee>
+        <header>
+            <h1>Education</h1>
+        </header>
+
+        <form id="educationForm">
+            <label for="university">University:</label>
+            <textarea id="university" rows="1" cols="50" placeholder="University Name" required></textarea>
+
+            <label for="degree">Degree:</label>
+            <input type="text" id="degree" placeholder="Degree with Year" required>
+
+            <label for="graduationDate">Graduation Year:</label>
+            <input type="text" id="graduationDate" placeholder="Month and Year separated by space" required>
+
+            <button type="button" onclick="saveEducationInfo()">Next</button>
+            <button type="button" onclick="window.location.href = 'personal_info.html'">Back</button>
+            <button type="button" onclick="window.location.href = 'index.html'">Home</button>
+        </form>
+    </div>
+
+
+</body>
+
+</html>
